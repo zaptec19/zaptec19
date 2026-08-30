@@ -1,16 +1,41 @@
-## Hi there 👋
+<table>
+<tr>
+<td>
 
-<!--
-**zaptec19/zaptec19** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```
+      _____
+     /     \
+    | () () |
+     \  ^  /
+      |||||
+      |||||
+```
 
-Here are some ideas to get you started:
+</td>
+<td>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+zaptec19@github
+----------------------------------------
+OS: ................. macOS Tahoe 26.5
+Host: ................ [add device model]
+Kernel: .............. [add kernel version]
+Uptime: ............... [add uptime]
+
+Languages.Code: ...... HTML, CSS, Python, C++, C
+
+Hobbies: .............. Football, Gym, Singing, Gaming
+
+Contact.Email: ....... vishwasahay19@gmail.com
+Contact.LinkedIn: .... linkedin.com/in/vishwasahay
+Contact.Discord: ..... zaptec19
+Contact.X: ............ x.com/zaptec19
+
+GitHub Stats
+Repos: ................ [ ]  |  Stars: ..... [ ]
+Commits: .............. [ ]  |  Followers: .. [ ]
+```
+
+</td>
+</tr>
+</table>
