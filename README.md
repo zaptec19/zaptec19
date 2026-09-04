@@ -1,26 +1,27 @@
 ```
-                                                vishwa@zaptec19 ───────────────────────────────────────
-                  qJYX###0Zbl                   OS: .................................. macOS 26, iOS 26
-                lU########WWWC                  Uptime: ..................... 4 years, 7 months, 7 days
-               0##########WWWW#d                Host: ................................... Mumbai, India
-               C#########WWWWWWU                Kernel: ............................ Student, Developer
-                #########WWWWWM                 IDE: ............................. VS Code, Claude Code
-                wW888&#WW888&Wz
-             i*zlxY%%%&&%%%%%Xr                 Languages.Programming: ....... Python, JavaScript, Java
-            *zzzzzpJLqzulZJCwx!                 Languages.Computer: ......... HTML, CSS, JSON, Markdown
-            <zr!<cncczzzzuuuuz                  Languages.Real: ............... English, Hindi, Marathi
-             rxxuzczzxhakuuuz
-            rvllll<*zuuuuuz<                    Hobbies.Software: .......... Minecraft Modding, Web Dev
-           rhhklll  zllllv                      Hobbies.Hardware: ............. Tinkering, Overclocking
-            llxlu   u++++co
-                 hQLi`...,kUQq                  ─ Contact ─────────────────────────────────────────────
-             hd`.'oCo,lv*:wUM##0Qh              Website: .............................. vishwasahay.com
-          OM000CarnULp&&YdUY#######Xw           GitHub: ...................................... zaptec19
-        Q0000000000MUUW&MUX0#########0a         Email: ................................ you@example.com
-      aM0000000000##0MW&00#############L        LinkedIn: ................................. your-handle
-     J################&&W############WWWM       Discord: .................................. your-handle
-    q#################&&W##########WWWWWWL
-    J################W&&&#######WWWWWWWWW0      ─ GitHub Stats ────────────────────────────────────────
-    0################W&&&####WWWWWWWWWWWW#      Repos: ................................. 1  |  Stars: 0
-    #################W&&&WWWWWWWWWWWWWWWWWZ     Commits: ........................... 4  |  Followers: 0
+               uuzfrrCCLQQ0QLYrU                vishwa@zaptec19 ───────────────────────────────────────
+             ufvcUXXLJUUJCCCXvL0OOUc           · OS: ................................. macOS 26, iOS 26
+           !uXC0mmCpdddqZ0QYYJcJOZO0Qco        · Uptime: .................... 4 years, 7 months, 7 days
+          *nYZqppZOdbbbdpqQQwOQJXUCLLCUxi      · Host: .................................. Mumbai, India
+        izfnZqppwUJmdddpwCQmqqZQQLYxxxvUvi     · Kernel: ........................... Student, Developer
+       ;u!XcwqZO0JmO0OO0UJUOmZ0QLXcYXrcJUr;    · IDE: ............................ VS Code, Claude Code
+      ,i:<0YJ0ZmZYwmmmmQU00CUUYfvJJUvvnrvv<
+     "::;uQYLmwwQJwwmmOc0OOLUrrjYJUXfx*znn<    · Languages.Programming: ...... Python, JavaScript, Java
+     ;!+zuUQYZwwULmmZOYQO0LvjXXXrXcrxxn<ozi    · Languages.Computer: ........ HTML, CSS, JSON, Markdown
+    ;+zCWvvLvUCCrYCCUfCQQJjvYYXYvxuo**+~<~i    · Languages.Real: .............. English, Hindi, Marathi
+    !*nk$%UrccCLrLQLcYXYcfXYYYXro~<zzo*+<i
+    !onh$$@OfrrUjJQUULCfucXcfnz*o:*o*++ii:     · Hobbies.Software: ......... Minecraft Modding, Web Dev
+    ;*uO$$$@OjxvznffCYvcjoozxjxo+:~<!i:;:      · Hobbies.Hardware: ............ Tinkering, Overclocking
+    :o~uQbW@@qjzoxnfnffzooujjo~<!,;,""",,
+    ;**!~*ourC0++oufu~*zo*<!::::,"^``^^         ─ Contact ─────────────────────────────────────────────
+    ,~fxu~++++<<*~<,~UYcrjno~!;::i```^         · Website: ............................. vishwasahay.com
+    "<*oz+*frnrrfuo+;*Qo%&MhkbqQj:''``         · GitHub: ..................................... zaptec19
+;;i''<+zuourUcjrrzn!<<<!*fcru<^```^            · Email: ............................... you@example.com
+vjn<.i~*ujfjccLCcux<z*~~;,"^",:;:^.            · LinkedIn: ................................ your-handle
+x*o~':+*ujrzjrvruno~*+;,,iii:,"^`              · Discord: ................................. your-handle
+;":i:`<u+ujcXXcn~<<i;::,":;,""^^;
+"",!<`"*<zxjffnoi~~!","""``^"",nw               ─ GitHub Stats ────────────────────────────────────────
+",;,:,.:~*zzo+!;:;:,^'`^```"<YZcQwX            · Repos: .................................. 1 | Stars: 0
+,:;i`"`'i*oo*+!^^""````''";!xO!!,~rO           · Commits: ............................ 5 | Followers: 0
+                                               · Lines of Code on GitHub: .............. 0 ( 0++, 0-- )
 ```
