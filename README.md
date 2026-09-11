@@ -1,7 +1,7 @@
 ```
                uuzfrrCCLQQ0QLYrU                vishwa@zaptec19 ───────────────────────────────────────
              ufvcUXXLJUUJCCCXvL0OOUc           · OS: ................................. macOS 26, iOS 26
-           !uXC0mmCpdddqZ0QYYJcJOZO0Qco        · Uptime: .................... 4 years, 7 months, 7 days
+           !uXC0mmCpdddqZ0QYYJcJOZO0Qco        · Uptime: ................... 4 years, 7 months, 14 days
           *nYZqppZOdbbbdpqQQwOQJXUCLLCUxi      · Host: .................................. Mumbai, India
         izfnZqppwUJmdddpwCQmqqZQQLYxxxvUvi     · Kernel: ........................... Student, Developer
        ;u!XcwqZO0JmO0OO0UJUOmZ0QLXcYXrcJUr;    · IDE: ............................ VS Code, Claude Code
@@ -21,7 +21,7 @@ vjn<.i~*ujfjccLCcux<z*~~;,"^",:;:^.            · LinkedIn: ....................
 x*o~':+*ujrzjrvruno~*+;,,iii:,"^`              · Discord: ................................. your-handle
 ;":i:`<u+ujcXXcn~<<i;::,":;,""^^;
 "",!<`"*<zxjffnoi~~!","""``^"",nw               ─ GitHub Stats ────────────────────────────────────────
-",;,:,.:~*zzo+!;:;:,^'`^```"<YZcQwX            · Repos: .................................. 1 | Stars: 0
-,:;i`"`'i*oo*+!^^""````''";!xO!!,~rO           · Commits: ............................ 5 | Followers: 0
+",;,:,.:~*zzo+!;:;:,^'`^```"<YZcQwX            · Repos: .................................. 2 | Stars: 0
+,:;i`"`'i*oo*+!^^""````''";!xO!!,~rO           · Commits: ........................... 28 | Followers: 0
                                                · Lines of Code on GitHub: .............. 0 ( 0++, 0-- )
 ```
