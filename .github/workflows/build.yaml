@@ -1,11 +1,10 @@
 name: README build
 
+# Runs only when you ask it to: Actions tab -> "README build" -> "Run workflow".
+# Nothing is scheduled, and pushing does not trigger it. Each run recomputes
+# every field from the live API, so it always catches up to current numbers.
 on:
-  push:
-    branches: [main]
-  schedule:
-    - cron: "0 4 * * *"      # 04:00 UTC daily
-  workflow_dispatch:          # and a manual "Run workflow" button
+  workflow_dispatch:
 
 permissions:
   contents: write             # the default token is read-only; the commit step needs this
