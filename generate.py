@@ -30,6 +30,9 @@ LOC = CACHE / "loc.json"
 
 USER = os.environ.get("USER_NAME") or "zaptec19"
 TOKEN = os.environ.get("ACCESS_TOKEN") or ""
+# GITHUB_TOKEN can't drive the GraphQL queries below, but it does lift REST off
+# the shared-runner rate limit, which is what silently zeroed the stats once.
+REST_TOKEN = TOKEN or os.environ.get("GITHUB_TOKEN") or ""
 
 BIRTHDAY = None        # "YYYY-MM-DD" makes Uptime your age; None uses account age
 GAP = 4                # blank columns between art and panel
@@ -53,16 +56,21 @@ def post_graphql(query: str, variables: dict) -> dict:
 
 
 def rest(path: str):
+    """Raises on failure. Never return empty data: a swallowed error here once
+    wrote a README full of zeros over perfectly good numbers."""
     headers = {"Accept": "application/vnd.github+json", "User-Agent": f"{USER}-readme"}
-    if TOKEN:
-        headers["Authorization"] = f"Bearer {TOKEN}"
+    if REST_TOKEN:
+        headers["Authorization"] = f"Bearer {REST_TOKEN}"
     req = urllib.request.Request("https://api.github.com" + path, headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             return json.load(resp), dict(resp.headers)
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
-        print(f"  ! {path}: {exc}", file=sys.stderr)
-        return None, {}
+    except urllib.error.HTTPError as exc:
+        remaining = exc.headers.get("X-RateLimit-Remaining")
+        hint = " (rate limited)" if remaining == "0" else ""
+        raise RuntimeError(f"GET {path} -> {exc.code}{hint}") from exc
+    except (urllib.error.URLError, TimeoutError) as exc:
+        raise RuntimeError(f"GET {path} -> {exc}") from exc
 
 
 # ----------------------------------------------------------------- stats
@@ -164,9 +172,9 @@ def gather_graphql(cache: dict) -> dict:
 
 def gather_rest(cache: dict) -> dict:
     profile, _ = rest(f"/users/{USER}")
-    profile = profile or {}
     repos, _ = rest(f"/users/{USER}/repos?per_page=100&type=owner")
-    repos = repos if isinstance(repos, list) else []
+    if not isinstance(profile, dict) or not isinstance(repos, list):
+        raise RuntimeError("unexpected REST payload")
 
     commits = 0
     for repo in repos:
@@ -176,11 +184,11 @@ def gather_rest(cache: dict) -> dict:
             commits += int(last.group(1))
         else:
             data, _ = rest(f"/repos/{USER}/{repo['name']}/commits?author={USER}&per_page=100")
-            commits += len(data) if isinstance(data, list) else 0
+            commits += len(data)
 
     # REST cannot give LOC; keep whatever the last authenticated run cached
     return {
-        "created": profile.get("created_at", "2022-01-28T00:00:00Z")[:10],
+        "created": profile["created_at"][:10],
         "followers": profile.get("followers", 0),
         "contributed": len(repos),
         "repos": len(repos),
@@ -312,6 +320,9 @@ def main() -> int:
         print("· no ACCESS_TOKEN, falling back to public REST (LOC from cache)")
         stats = gather_rest(cache)
 
+    if stats["repos"] == 0 and stats["commits"] == 0:
+        raise RuntimeError("API returned nothing; refusing to overwrite README")
+
     art = ART.read_text().split("\n")
     while art and not art[-1].strip():
         art.pop()
@@ -323,4 +334,9 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except RuntimeError as exc:
+        print(f"! {exc}", file=sys.stderr)
+        print("! README left untouched", file=sys.stderr)
+        raise SystemExit(1)
